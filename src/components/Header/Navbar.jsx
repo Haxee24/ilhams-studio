@@ -41,12 +41,12 @@ function Navbar() {
         </NavLink>
 
         <NavLink
-          to="/about"
+          to="/contact"
           className={({ isActive }) =>
             `${baseStyle} ${isActive ? "opacity-100 text-white font-medium" : ""}`
           }
         >
-          About
+          Contact
         </NavLink>
       </div>
 
