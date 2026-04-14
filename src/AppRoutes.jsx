@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import { Contact, Gallery, Home, Layout } from "./pages";
+import { ArtPage, Contact, Gallery, Home, Layout } from "./pages";
 function AppRoutes() {
   return (
     <Routes>
@@ -7,6 +7,7 @@ function AppRoutes() {
         <Route index element={<Home />} />
         <Route path="/contact" element={<Contact/>} />
         <Route path="/gallery" element={<Gallery/>} />
+        <Route path="/images/:id" element={<ArtPage/>} />
       </Route>
     </Routes>
   );

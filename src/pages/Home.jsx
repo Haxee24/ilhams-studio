@@ -2,54 +2,54 @@ import paintings from "../data/paintings";
 import { ArtCard } from "../components";
 
 function Home() {
-  return (
+    return (
     <div
-      className="min-h-screen"
-      style={{
+        className="min-h-screen"
+        style={{
         background: "linear-gradient(to bottom, #FAF7F4, #F3ECE8)",
         color: "#3A3A3A",
-      }}
+        }}
     >
-      {/* HERO */}
-      <section className="px-6 py-16 text-center max-w-3xl mx-auto">
+        {/* HERO */}
+        <section className="px-6 py-16 text-center max-w-3xl mx-auto">
         <p className="text-xs tracking-[0.2em] uppercase opacity-50 mb-4">
-          Ilham's Studio
+            Ilham's Studio
         </p>
 
         <h2
-          className="text-4xl md:text-5xl mb-6 leading-snug"
-          style={{ fontFamily: "serif" }}
+            className="text-4xl md:text-5xl mb-6 leading-snug"
+            style={{ fontFamily: "serif" }}
         >
-          Soft pieces,
-          <br />
-          made with intention
+            Soft pieces,
+            <br />
+            made with intention
         </h2>
 
         <p className="text-sm md:text-base opacity-70 mb-8">
-          A quiet collection of paintings and handmade work inspired by soft
-          tones, textures, and emotion.
+            A quiet collection of paintings and handmade work inspired by soft
+            tones, textures, and emotion.
         </p>
 
         <button
-          className="px-6 py-3 rounded-full text-sm shadow-sm"
-          style={{
+            className="px-6 py-3 rounded-full text-sm shadow-sm"
+            style={{
             backgroundColor: "#E8DAD3",
-          }}
+            }}
         >
-          Request a Custom Piece
+            Request a Custom Piece
         </button>
-      </section>
+        </section>
 
-      {/* PINTEREST GRID */}
-      <section className="px-6 md:px-12 pb-20">
+        {/* PINTEREST GRID */}
+        <section className="px-6 md:px-12 pb-20">
         <div className="columns-1 sm:columns-2 md:columns-3 gap-6 space-y-6">
-          {paintings.map((item) => (
-            <ArtCard key={item.id} {...item} />
-          ))}
+            {paintings.slice(0, 5).map((item, index) => (
+            <ArtCard key={index} {...item} id={index} />
+            ))}
         </div>
-      </section>
+        </section>
     </div>
-  );
+    );
 }
 
 export default Home;
