@@ -45,7 +45,7 @@ function Home() {
       {/* HERO */}
       <section className="px-6 py-16 text-center max-w-3xl mx-auto">
         <p className="text-xs tracking-[0.2em] uppercase opacity-50 mb-4">
-          Handmade Studio
+          Ilham's Studio
         </p>
 
         <h2
