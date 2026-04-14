@@ -1,10 +1,5 @@
 const paintings = [
   {
-    title: "Soft Horizon",
-    image:
-      "https://images.unsplash.com/photo-1549887534-1541e9326642?q=80&w=800",
-  },
-  {
     title: "Muted Bloom",
     image:
       "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?q=80&w=800",
